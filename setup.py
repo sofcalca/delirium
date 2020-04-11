@@ -17,8 +17,9 @@ setup(
     },
     install_requires = [
         'click',
-        'transformers',
-        'torch'
+        'flask',
+        'torch',
+        'transformers'
     ],
     extras_require={
         'dev': [
