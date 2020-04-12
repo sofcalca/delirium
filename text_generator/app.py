@@ -5,7 +5,6 @@ from flask import Flask, request
 
 app = Flask(__name__, static_url_path='/static')
 app.secret_key = os.environ.get('FLASK_SECRET', '+%+3Q23!zbc+!Dd@')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 
 @app.route('/', methods=["POST"])
