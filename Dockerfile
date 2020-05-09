@@ -8,4 +8,4 @@ RUN python ./text_generator/run_generation.py \
     --model_name_or_path=flaubert-base-cased \
     --temperature=0.1 --repetition_penalty=20 --num_return_sequences=1 --prompt a
 
-ENTRYPOINT ["python", "-m", "text_generator.cli"]
+ENTRYPOINT ["python", "-m", "text_generator.app"]
