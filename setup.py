@@ -16,6 +16,7 @@ setup(
         ],
     },
     install_requires = [
+        'ariadne',
         'click',
         'flask',
         'torch',
