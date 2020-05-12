@@ -1,4 +1,8 @@
-Based on https://github.com/huggingface/transformers/blob/master/examples/run_generation.py
+# Generate text using Huggingface's Transformers
+
+[![Build Status](https://travis-ci.org/sofcalca/delirium.svg?branch=master)](https://travis-ci.org/sofcalca/delirium)
+
+Generation based on on https://github.com/huggingface/transformers/blob/master/examples/run_generation.py
 
 ## Requirements
 Needs rust
@@ -12,11 +16,4 @@ python -m text_generator.app
 ```
 
 ## Request API
-```
-curl -X POST --header "Content-Type: application/json" --data '{"text":"Je commence ma phrase, mais", "model": "flaubert-base-cased", "length": 20, "temperature": 0.5, "repetition_penalty": 1.8}' http://localhost:5000/
-```
-
-## Run with CLI
-```
-python -m text_generator.cli
-```
+Go to `http://localhost:5000/graphql` and enter your query.
